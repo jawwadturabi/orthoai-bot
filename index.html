@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=0.5">
+    <title>ORTHOAI</title>
+    <style>
+        df-messenger {
+            height: 300px;
+            max-height: 90%;
+            min-height: 30%;
+            --df-messenger-chat-background-color: black;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>ORTHOAI</h1>
+    <div class="container">
+
+        <df-messenger intent="WELCOME" chat-title="ORTHOAI" agent-id="c5e87744-840a-4f3a-8b77-008e88c9fbdd"
+            language-code="pt-br" expand=true wait-open=true></df-messenger>
+    </div>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <script>
+        var elem = document.querySelector('df-messenger').style;
+        console.log(elem)
+    </script>
+</body>
+
+
+</html>
